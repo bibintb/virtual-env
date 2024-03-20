@@ -68,5 +68,67 @@ Once you've finished working in the virtual environment, you can deactivate it b
 deactivate
 ```
 
-For a startup development team, incorporating virtual environments into their workflow will ensure that each member can work on the project without affecting the system-wide Python installation or the work of others. Additionally, it simplifies dependency management and makes the project more portable and easier to set up on other machines, which is beneficial for continuous integration/continuous deployment (CI/CD) practices.
+<br>
+<br>
+<br>
+
+
+Setting Up and Managing Python Virtual Environments on Ubuntu
+<br>
+<br>
+This guide provides steps for installing virtualenv, creating a new virtual environment, and managing it. These steps are essential for maintaining project-specific dependencies without affecting the global Python setup.
+
+Prerequisites: 
+Ensure you have Python and pip installed on your system. You can verify this by running:
+
+```
+python3 --version
+```
+
+```
+pip3 --version
+```
+
+Step 1: Installing virtualenv
+First, you need to install the virtualenv package if it's not already installed. Open a terminal and run the following command:
+
+```
+sudo apt install python3-virtualenv
+```
+
+Step 2: Verify Installation
+To verify that virtualenv has been successfully installed, you can check its version:
+
+```
+virtualenv --version
+```
+
+Step 3: Creating a Virtual Environment
+Now, create a new virtual environment by replacing nameofenv with your desired environment name:
+
+```
+virtualenv nameofenv
+```
+
+Step 4: Activating the Virtual Environment
+After creating the virtual environment, you need to activate it to use it. Activate your environment by running:
+
+```
+source nameofenv/bin/activate
+```
+
+Your prompt will change to indicate that you are now working within the virtual environment. It usually prepends the environment name to your default prompt.
+
+Step 5: Deactivating the Virtual Environment
+When you are done working within the virtual environment, and you want to switch back to your system’s default Python, you can deactivate it by running:
+
+```
+deactivate
+```
+Your prompt will return to normal, indicating you are no longer working inside the virtual environment.
+
+
+
+
+
 
